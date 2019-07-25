@@ -1,5 +1,9 @@
 # manjinet
 Webapp para controlar el sistema de riego y calefacción de Manjirón
 
-Editando en VSC
+Estructura de carpetas:
+- Front-end
+- Back-end
+- Pruebas
+
 
