@@ -59,7 +59,7 @@
     /* When the checkbox is checked, add a blue background */
 
     .hourCheckbox input:checked~.checkmark {
-        background-color: #2196F3;
+        background-color: #007bff;
     }
 
     #weekScheduler, .timeZoneControl{
@@ -100,13 +100,13 @@
         appearance: none;
         width: 25px;
         height: 25px;
-        background: #2196F3;
+        background: #007bff;
         cursor: pointer;
     }
 
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
-        background: #2196F3;
+        background: #007bff;
         cursor: pointer;
     }

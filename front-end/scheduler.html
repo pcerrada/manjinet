@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>weekScheduler</title>
+    <link rel="stylesheet" type="text/css" href="css/weekScheduler.css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/weekScheduler.js"></script>
+
+
+    <script>
+
+// Time Picker Initialization
+$('#input_starttime').pickatime({});
+
+        $(function () {
+            // Create HTML structure for the weekScheduler
+            weekSchedulerCreateHTML("#weekScheduler");
+            // Update scheduler HTML 
+            weekSchedulerUpdateHTML(weekSchedule);
+
+            // Create HTML structure for the timeAdjuster
+            timeAdjusterCreateHTML("#timeAdjuster");
+            // Update adjuster HTML
+            timeAdjusterUpdateHTML(timerSettings);
+
+            // Configure events
+            $("#guarda").on("click", function () {
+                localStorage.weekSchedule = weekSchedulerJSONFromHTML(weekSchedule);
+                localStorage.timerSettings = timeAdjusterJSONFromHTML(timerSettings);
+            });
+        });
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="md-form">
+        <input placeholder="Selected time" type="text" id="input_starttime" class="form-control timepicker">
+        <label for="input_starttime">Light version, 12hours</label>
+      </div>
+
+</body>
+
+</html>

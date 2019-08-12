@@ -101,3 +101,18 @@ function timeAdjusterJSONFromHTML(timerSettings) {
     }
     return JSON.stringify(timerSettings);
 }
+
+// Create web element
+function createElementRiego(){
+        // Create HTML structure for the weekScheduler
+            weekSchedulerCreateHTML("#weekScheduler");
+            // Update scheduler HTML 
+            weekSchedulerUpdateHTML(weekSchedule);
+
+            // Create HTML structure for the timeAdjuster
+            timeAdjusterCreateHTML("#timeAdjuster");
+            // Update adjuster HTML
+            timeAdjusterUpdateHTML(timerSettings);
+
+            return;
+}
