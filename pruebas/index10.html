@@ -12,39 +12,41 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
+
+
+
 <body class="container">
    
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">00</a>
-          <a class="dropdown-item" href="#">01</a>
-          <a class="dropdown-item" href="#">02</a>
-          <a class="dropdown-item" href="#">03</a>
-          <a class="dropdown-item" href="#">04</a>
-          <a class="dropdown-item" href="#">05</a>
-          <a class="dropdown-item" href="#">06</a>
-          <a class="dropdown-item" href="#">07</a>
-          <a class="dropdown-item" href="#">08</a>
-          <a class="dropdown-item" href="#">09</a>
-          <a class="dropdown-item" href="#">10</a>
-          <a class="dropdown-item" href="#">11</a>
-          <a class="dropdown-item" href="#">12</a>
-          <a class="dropdown-item" href="#">13</a>
-          <a class="dropdown-item" href="#">14</a>
-          <a class="dropdown-item" href="#">15</a>
-          <a class="dropdown-item" href="#">16</a>
-          <a class="dropdown-item" href="#">17</a>
-          <a class="dropdown-item" href="#">18</a>
-          <a class="dropdown-item" href="#">19</a>
-          <a class="dropdown-item" href="#">20</a>
-          <a class="dropdown-item" href="#">21</a>
-          <a class="dropdown-item" href="#">22</a>
-          <a class="dropdown-item" href="#">23</a>
+
+        <div class="d-inline-block">
+            <select class="custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
         </div>
-      </div>
+        <div class="d-inline-block">
+            <select class="custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+        </div>
+        <div class="d-inline-block">
+            <select class="custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+
+        </div>
+        <div id="mete" ></div>
+
+
 
 
 
@@ -58,6 +60,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
-
+<script>
+    var miselector = '        <div class="d-inline-block"> <select class="custom-select"> <option selected>Horas</option> <option value="1">One</option>       <option value="2">Two</option> <option value="3">Three</option>       </select>     </div>'
+    $(function () {
+      $("#mete").html(miselector);
+  
+    })
+  
+  
+  </script>
 
 </html>
